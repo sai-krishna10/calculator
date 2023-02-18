@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, blue, violet);
+    flex-direction: column;
+}
+
+.title {
+    font-size: 30px;
+    color: aliceblue;
+    font-weight: 900;
+}
+
+.container {
+    height: 70vh;
+    width: 25vw;
+    background-color: aliceblue;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+}
+
+.container input {
+    width: 25vw;
+    font-size: 20px;
+    padding: 30px;
+    background-color: black;
+    border-radius: 4px;
+    color: aliceblue;
+    text-align: right;
+    pointer-events: none
+}
+
+.container .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+}
+
+.container .buttons button {
+    height: 9vh;
+    width: 5vw;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: 900;
+}
+
+
+.container .buttons .btn1 {
+    background-color: orange;
+}
+
+.container .buttons button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: aliceblue;
+}
+
+.container .buttons .clr {
+    background-color: red;
+    color: aliceblue;
+    font-weight: 900;
+}
+
+.container .buttons .eql {
+    background-color: green;
+    color: aliceblue;
+    font-weight: 900;
+}
+
+
+@media only screen and (max-width:821px) {
+    .container .buttons button {
+        height: 9vh;
+        width: 9vw;
+        margin: 5px;
+        border-radius: 5px;
+    }
+
+    .container {
+        height: 60vh;
+        width: 45vw;
+        background-color: gray;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container input {
+        width: 45vw;
+        font-size: 12px;
+        padding: 30px;
+        background-color: black;
+        border-radius: 4px;
+        color: aliceblue;
+        text-align: right;
+        pointer-events: none
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .container .buttons button {
+        height: 8vh;
+        width: 13vw;
+        margin: 5px;
+        border-radius: 5px;
+    }
+
+    .container {
+        height: 60vh;
+        width: 65vw;
+        background-color: gray;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container input {
+        width: 65vw;
+        font-size: 12px;
+        padding: 30px;
+        background-color: black;
+        border-radius: 4px;
+        color: aliceblue;
+        text-align: right;
+        pointer-events: none
+    }
+}
+
+
+@media only screen and (max-width:310px) {
+    .container .buttons button {
+        height: 7vh;
+        width: 8vw;
+        margin: 5px;
+        border-radius: 5px;
+    }
+
+    .container {
+        height: 60vh;
+        width: 50vw;
+        background-color: gray;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container input {
+        width: 50vw;
+        font-size: 10px;
+        padding: 30px;
+        background-color: black;
+        border-radius: 4px;
+        color: aliceblue;
+        text-align: right;
+        pointer-events: none
+    }
+}
